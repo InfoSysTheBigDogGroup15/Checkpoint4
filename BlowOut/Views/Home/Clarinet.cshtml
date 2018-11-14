@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Clarinet";
+}
+
+<link href="~/Content/MyStyles.css" rel="stylesheet" />
+<script src="~/Scripts/MyJavaScript.js"></script>
+<h2 class="heading2">Clarinet</h2>
+<center>
+    <h3><b>Clarinet</b></h3>
+    <img src="~/Images/Clarinet.jpg" class="imgborder imghover" width="600" height="600">
+    <br /><br />
+
+    <p>*Click the buttons below to view the price for both New and Used! (Click again to hide the price)</p>
+
+    <input type="button" class="button" value="USED PRICE" onclick="DisplayUsed()">
+    <br /><br />
+    <div style="Display: none" id="UsedPrice"><b><u>$25</u> a Month</b></div>
+    <br />
+    <input type="button" class="button" value="NEW PRICE" onclick="DisplayNew()">
+    <br /><br />
+    <div style="Display: none" id="NewPrice"><b><u>$55</u> a Month</b></div>
+    <br />
+</center>
+<p>@Html.ActionLink("Back to the LIst", "Rentals", "Home", null, new { @class = "btn btn-primary btn-large" })</p>

@@ -1,0 +1,182 @@
+﻿
+@{
+    ViewBag.Title = "Rentals";
+}
+<link href="~/Content/Footer.css" rel="stylesheet" />
+<style>
+    img:hover {
+        outline: 3px solid black;
+    }
+
+    img {
+        border: 1px solid black;
+    }
+
+        img:hover {
+            outline: 2px solid black;
+        }
+</style>
+<h2>Rentals</h2>
+
+<p>Here are the instruments and prices in a table form:</p>
+<table class="table">
+    <tr>
+        <th scope="col">Instrument</th>
+        <th scope="col">New</th>
+        <th scope="col">Used</th>
+    </tr>
+    <tr>
+        <th scope="row">Trumpet</th>
+        <td>$55 a month</td>
+        <td>$25 a month</td>
+    </tr>
+    <tr>
+        <th scope="row">Trombone</th>
+        <td>$65 a month</td>
+        <td>$35 a month</td>
+    </tr>
+    <tr>
+        <th scope="row">Tuba</th>
+        <td>$70 a month</td>
+        <td>$50 a month</td>
+    </tr>
+    <tr>
+        <th scope="row">Flute</th>
+        <td>$40 a month</td>
+        <td>$25 a month</td>
+    </tr>
+    <tr>
+        <th scope="row">Clarinet</th>
+        <td>$35 a month</td>
+        <td>$27 a month</td>
+    </tr>
+    <tr>
+        <th scope="row">Saxophone</th>
+        <td>$42 a month</td>
+        <td>$30 a month</td>
+    </tr>
+</table>
+
+<div class="container">
+    <div class="col-sm-4">
+        <a href="@Url.Action("Trumpet", "Home")">
+            <img src="~/Images/Trumpet.jpg" class="img-thumbnail" width="300" height="300">
+        </a>
+        <center><p><b>Trumpet</b></p></center>
+    </div>
+    <div class="col-sm-4">
+        <a href="@Url.Action("Trombone", "Home")">
+            <img src="~/Images/Trombone.jpg" class="img-thumbnail" width="300" height="300">
+        </a>
+        <center><p><b>Trombone</b></p></center>
+    </div>
+    <div class="col-sm-4">
+        <a href="@Url.Action("Tuba", "Home")">
+            <img src="~/Images/Tuba.jpg" class="img-thumbnail" width="300" height="300">
+        </a>
+        <center><p><b>Tuba</b></p></center>
+    </div>
+</div>
+<div class="container">
+    <div class="col-sm-4">
+        <a href="@Url.Action("Flute", "Home")">
+            <img src="~/Images/Flute.jpg" class="img-thumbnail" width="300" height="300">
+        </a>
+        <center><p><b>Flute</b></p></center>
+    </div>
+    <div class="col-sm-4">
+        <a href="@Url.Action("Clarinet", "Home")">
+            <img src="~/Images/Clarinet.jpg" class="img-thumbnail" width="300" height="300">
+        </a>
+        <center><p><b>Clarinet</b></p></center>
+    </div>
+    <div class="col-sm-4">
+        <a href="@Url.Action("Saxophone", "Home")">
+            <img src="~/Images/Sax.jpg" class="img-thumbnail" width="300" height="300">
+        </a>
+        <center><p><b>Saxophone</b></p></center>
+    </div>
+</div>
+
+@*<div class="container">
+    <div class="col-sm-4">
+        <img src="~/Images/Trumpet.jpg" class="img-thumbnail" data-toggle="modal" data-target="#myModal" width="300" height="300">
+        <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="~/Images/Trumpet.jpg" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <center><p><b>Trumpet</b></p></center>
+    </div>
+    <div class="col-sm-4">
+        <img src="~/Images/Trombone.jpg" class="img-thumbnail" data-toggle="modal" data-target="#myModal" width="300" height="300">
+        <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="~/Images/Trombone.jpg" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <center><p><b>Trombone</b></p></center>
+    </div>
+    <div class="col-sm-4">
+        <img src="~/Images/Tuba.jpg" class="img-thumbnail" data-toggle="modal" data-target="#myModal" width="300" height="300">
+        <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="~/Images/Tuba.jpg" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <center><p><b>Tuba</b></p></center>
+    </div>
+</div>
+<div class="container">
+    <div class="col-sm-4">
+        <img src="~/Images/Flute.jpg" class="img-thumbnail" data-toggle="modal" data-target="#myModal" width="300" height="300">
+        <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="~/Images/Flute.jpg" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <center><p><b>Flute</b></p></center>
+    </div>
+    <div class="col-sm-4">
+        <img src="~/Images/Clarinet.jpg" class="img-thumbnail" data-toggle="modal" data-target="#myModal" width="300" height="300">
+        <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="~/Images/Clarinet.jpg" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <center><p><b>Clarinet</b></p></center>
+    </div>
+    <div class="col-sm-4">
+        <img src="~/Images/Sax.jpg" class="img-thumbnail" data-toggle="modal" data-target="#myModal" width="300" height="300">
+        <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="~/Images/Sax.jpg" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <center><p><b>Saxophone</b></p></center>
+    </div>
+</div>*@

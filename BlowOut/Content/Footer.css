@@ -1,0 +1,19 @@
+﻿.myFooterText {
+    font-family:'Freestyle Script';
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.jumbotron {
+    text-align: center;
+    font-family: 'MS UI Gothic';
+    background-image: url('../../Images/background.jpg');
+}
+
+.lead {
+    font-size: 18px;
+    font-family: 'MS UI Gothic';
+}
